@@ -5,3 +5,4 @@ PythonCode/Example_graphs/
 .idea
 venv
 .DS_Store
+.ipynb_checkpoints

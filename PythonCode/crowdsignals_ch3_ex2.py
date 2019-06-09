@@ -13,6 +13,9 @@ from Chapter3.OutlierDetection import DistanceBasedOutlierDetection
 import copy
 import pandas as pd
 import numpy as np
+import warnings
+
+warnings.filterwarnings('ignore')
 
 def plot_chauvenet(dataset):
     for col in outlier_columns:

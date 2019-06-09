@@ -39,7 +39,7 @@ except IOError as e:
     print('File not found, try to run previous crowdsignals scripts first!')
     raise e
 
-dataset.index = dataset.index.to_datetime()
+dataset.index = pd.to_datetime(dataset.index)
 
 # Compute the number of milliseconds covered by an instance based on the first two rows
 milliseconds_per_instance = (dataset.index[1] - dataset.index[0]).microseconds/1000
